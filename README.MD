@@ -1,1 +1,1 @@
-Currently working on Data Layer - Repository
+Currently at Data Layer - DB Preparation (1:16:00)
