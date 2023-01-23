@@ -8,5 +8,6 @@ namespace PlatformService.Data
         IEnumerable<Platform> GetAllPlatforms();
         Platform GetPlatformById(int id);
         void CreatePlatform(Platform plat);
+        public bool SaveChanges();
     }
 }
