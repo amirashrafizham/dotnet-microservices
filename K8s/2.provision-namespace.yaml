@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: my-namespace1
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: my-namespace2
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-first-pod
+  namespace: my-namespace1
+spec:
+  containers:
+  - image: hello-world
+    name: hello
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-first-pod
+  namespace: my-namespace2
+spec:
+  containers:
+  - image: hello-world
+    name: hello

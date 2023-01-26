@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: aspnet-sample-service
+spec:
+  selector:
+    app: aspnet-sample
+  ports:
+  - port: 80
+    targetPort: 80
