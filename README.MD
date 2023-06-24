@@ -17,3 +17,18 @@ to run the amd64, use Docker desktop app. Easier.
 docker inspect platformservice 
 
 
+### To run Kubernetes deployments/service yaml files
+kubectl apply -f platformservice.yaml
+(make sure to push the image to DockerHub first)
+
+### To check Kubernetes deployments
+kubectl get deployments
+### To check Kubernetes pods
+kubectl get pods
+### To delete Kubernetes deployments
+kubectl delete deployments platformservice-deployment
+(when you delete containers, kubernetes will auto spin up new ones. This is because of the deployment file)
+
+NodePort allows you to access the service from outside the cluster.
+### To get Kubernetes services
+kubectl get services
