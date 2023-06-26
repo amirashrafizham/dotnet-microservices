@@ -45,4 +45,11 @@ ClusterIP is a service and will be attached to a container. These IPs will be us
 ### To restart a deployment + pull the latest docker image
 kubectl rollout restart deployment [deployment_name]
 
-# Currently at Adding an API Gateway
+
+### To add Nginx Ingress Controller
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.44.0/deploy/static/provider/cloud/deploy.yaml
+
+### To check Nginx Ingress Controller pods and services
+kubectl get pods --namespace ingress-nginx
+kubectl get services --namespace ingress-nginx
+
